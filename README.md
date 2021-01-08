@@ -13,5 +13,5 @@ docker build -t ethminer:latest .
 By default, shares are sent to my account. 
 
 ```sh
-docker run --rm -d --name ethminer ethminer:latest
+docker run --rm -d --name ethminer --gpus all ethminer:latest
 ```

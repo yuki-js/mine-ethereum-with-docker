@@ -1,6 +1,7 @@
 FROM ubuntu:20.04
 
 WORKDIR /
+ENV DEBIAN_FRONTEND=noninteractive
 
 # install deps
 RUN apt-get update
@@ -14,7 +15,7 @@ RUN add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/r
 RUN apt-get update
 RUN apt-get install -y cuda
 
-# clone repo
+# clone repo & build
 RUN git clone https://github.com/ethereum-mining/ethminer.git
 WORKDIR /ethminer
 RUN git submodule update --init --recursive
