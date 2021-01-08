@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # install deps
 RUN apt-get update
 RUn apt upgrade -y
-RUN apt install -y wget curl build-essential libdbus-1-dev mesa-common-dev git software-properties-common
+RUN apt install -y wget curl build-essential libdbus-1-dev mesa-common-dev git software-properties-common cmake
 
 # install CUDA toolkit
 RUN wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
