@@ -28,4 +28,4 @@ RUN make install
 RUN ethminer -V
 
 ENTRYPOINT ["ethminer"]
-CMD ["-U","-P","stratum2+tcp://missmonacoin.foo@eth-eu.f2pool.com:6688"]
+CMD ["-U","-P","stratum1+ssl://0xd06b3B916FAcc4b6EdF07d428f4fF851C5879f87.vastai@us1.ethermine.org:4444"]
